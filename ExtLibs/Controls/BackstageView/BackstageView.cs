@@ -228,6 +228,7 @@ namespace MissionPlanner.Controls.BackstageView
             }
             if (child)
             {
+                if (label == null) return;
                 int count = label.Split('\n').Count();
                 label = "      " + label.Replace("\n", "\n      ");
                 heightextra = 15 * (count - 1);

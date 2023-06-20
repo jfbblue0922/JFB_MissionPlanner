@@ -250,6 +250,10 @@ namespace MissionPlanner.GCSViews
             {
                 AddBackstageViewPage(typeof(ConfigHWPX4Flow), rm.GetString("backstageViewPagePX4Flow.Text"), true, opt);
             }
+            if (MainV2.DisplayConfiguration.displayJRE30)
+            {
+                AddBackstageViewPage(typeof(ConfigHWJRE30), rm.GetString("backstageViewPageJRE30.Text"), true, opt);
+            }
             if (MainV2.DisplayConfiguration.displayOpticalFlow)
             {
                 AddBackstageViewPage(typeof(ConfigHWOptFlow), rm.GetString("backstageViewPageoptflow.Text"), isConnected && gotAllParams, opt);

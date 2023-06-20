@@ -145,7 +145,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;backstageView.ZOrder" xml:space="preserve">
-    <value>29</value>
+    <value>30</value>
   </data>
   <data name="backstageViewPageaccel.Location" type="System.Drawing.Point, System.Drawing">
     <value>34, 246</value>
@@ -158,9 +158,6 @@
   </data>
   <data name="backstageViewPageaccel.Text" xml:space="preserve">
     <value>Accel Calibration</value>
-  </data>
-  <data name="backstageViewPageInitialParams.Text" xml:space="preserve">
-    <value>Initial Tune Parameter</value>
   </data>
   <data name="backstageViewPageaccel.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -796,10 +793,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;backstageViewPagePX4Flow.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>24</value>
   </data>
   <data name="backstageViewPageradio.Location" type="System.Drawing.Point, System.Drawing">
-    <value>196, 177</value>
+    <value>196, 198</value>
   </data>
   <data name="backstageViewPageradio.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 23</value>
@@ -823,10 +820,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;backstageViewPageradio.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>25</value>
   </data>
   <data name="backstageViewPageSikradio.Location" type="System.Drawing.Point, System.Drawing">
-    <value>196, 200</value>
+    <value>196, 221</value>
   </data>
   <data name="backstageViewPageSikradio.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 23</value>
@@ -850,10 +847,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;backstageViewPageSikradio.ZOrder" xml:space="preserve">
-    <value>25</value>
+    <value>26</value>
   </data>
   <data name="backstageViewPagesonar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>196, 223</value>
+    <value>196, 244</value>
   </data>
   <data name="backstageViewPagesonar.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 23</value>
@@ -877,10 +874,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;backstageViewPagesonar.ZOrder" xml:space="preserve">
-    <value>26</value>
+    <value>27</value>
   </data>
   <data name="backstageViewPagetradheli.Location" type="System.Drawing.Point, System.Drawing">
-    <value>196, 246</value>
+    <value>196, 267</value>
   </data>
   <data name="backstageViewPagetradheli.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 23</value>
@@ -904,10 +901,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;backstageViewPagetradheli.ZOrder" xml:space="preserve">
-    <value>27</value>
+    <value>28</value>
   </data>
   <data name="backstageViewPagewizard.Location" type="System.Drawing.Point, System.Drawing">
-    <value>196, 269</value>
+    <value>196, 290</value>
   </data>
   <data name="backstageViewPagewizard.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 23</value>
@@ -931,7 +928,37 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;backstageViewPagewizard.ZOrder" xml:space="preserve">
-    <value>28</value>
+    <value>29</value>
+  </data>
+  <data name="backstageViewPageJRE30.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="backstageViewPageJRE30.Location" type="System.Drawing.Point, System.Drawing">
+    <value>196, 177</value>
+  </data>
+  <data name="backstageViewPageJRE30.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 23</value>
+  </data>
+  <data name="backstageViewPageJRE30.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="backstageViewPageJRE30.Text" xml:space="preserve">
+    <value>JRE30</value>
+  </data>
+  <data name="backstageViewPageJRE30.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;backstageViewPageJRE30.Name" xml:space="preserve">
+    <value>backstageViewPageJRE30</value>
+  </data>
+  <data name="&gt;&gt;backstageViewPageJRE30.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;backstageViewPageJRE30.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;backstageViewPageJRE30.ZOrder" xml:space="preserve">
+    <value>23</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

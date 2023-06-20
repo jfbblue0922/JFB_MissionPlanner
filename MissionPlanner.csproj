@@ -233,6 +233,30 @@
     <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigHWParachute.uk.resx">
       <DependentUpon>ConfigHWParachute.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigHWJRE30.ar.resx">
+      <DependentUpon>ConfigHWJRE30.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigHWJRE30.az-Latn-AZ.resx">
+      <DependentUpon>ConfigHWJRE30.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigHWJRE30.de-DE.resx">
+      <DependentUpon>ConfigHWJRE30.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigHWJRE30.pt.resx">
+      <DependentUpon>ConfigHWJRE30.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigHWJRE30.resx">
+      <DependentUpon>ConfigHWJRE30.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigHWJRE30.ru-KZ.resx">
+      <DependentUpon>ConfigHWJRE30.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigHWJRE30.tr.resx">
+      <DependentUpon>ConfigHWJRE30.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigHWJRE30.uk.resx">
+      <DependentUpon>ConfigHWJRE30.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigHWPX4Flow.uk.resx">
       <DependentUpon>ConfigHWPX4Flow.cs</DependentUpon>
     </EmbeddedResource>
@@ -828,6 +852,12 @@
     </Compile>
     <Compile Include="GCSViews\ConfigurationView\ConfigAdvanced.Designer.cs">
       <DependentUpon>ConfigAdvanced.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GCSViews\ConfigurationView\ConfigHWJRE30.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\ConfigurationView\ConfigHWJRE30.Designer.cs">
+      <DependentUpon>ConfigHWJRE30.cs</DependentUpon>
     </Compile>
     <Compile Include="GCSViews\ConfigurationView\ConfigInitialParams.cs">
       <SubType>UserControl</SubType>

@@ -1300,8 +1300,14 @@ public partial class MAVLink
         GUIDED_CHANGE_ALTITUDE=43001, 
         ///<summary> Change to target heading at a given rate, overriding previous heading/s. This slews the vehicle at a controllable rate between it's previous heading and the new one. (affects GUIDED only. Exiting GUIDED returns aircraft to normal behaviour defined elsewhere. Designed for onboard companion-computer command-and-control, not normally operator/GCS control.) |course-over-ground or raw vehicle heading.| Target heading.| Maximum centripetal accelearation, ie rate of change,  toward new heading.| Empty| Empty| Empty| Empty|  </summary>
         [Description("Change to target heading at a given rate, overriding previous heading/s. This slews the vehicle at a controllable rate between it's previous heading and the new one. (affects GUIDED only. Exiting GUIDED returns aircraft to normal behaviour defined elsewhere. Designed for onboard companion-computer command-and-control, not normally operator/GCS control.)")]
-        GUIDED_CHANGE_HEADING=43002, 
-        
+        GUIDED_CHANGE_HEADING=43002,
+
+        [Description("ZEROSET_SET_JRE30")]
+        ZEROSET_SET_JRE30 = 32100,
+        [Description("ZEROSET_CLR_JRE30")]
+        ZEROSET_CLR_JRE30 = 32101,
+        [Description("GAINSET_JRE30")]
+        GAINSET_JRE30 = 32102,
     };
     
     ///<summary>  </summary>

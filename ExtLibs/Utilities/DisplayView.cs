@@ -87,6 +87,7 @@ namespace MissionPlanner.Utilities
         public Boolean displayRangeFinder { get; set; }
         public Boolean displayAirSpeed { get; set; }
         public Boolean displayPx4Flow { get; set; }
+        public Boolean displayJRE30 { get; set; }
         public Boolean displayOpticalFlow { get; set; }
         public Boolean displayOsd { get; set; }
         public Boolean displayCameraGimbal { get; set; }
@@ -179,6 +180,7 @@ namespace MissionPlanner.Utilities
             displayRangeFinder = true;
             displayAirSpeed = true;
             displayPx4Flow = true;
+            displayJRE30 = true;
             displayOpticalFlow = true;
             displayOsd = true;
             displayCameraGimbal = true;
@@ -305,6 +307,7 @@ namespace MissionPlanner.Utilities
                 displayRangeFinder = true,
                 displayAirSpeed = true,
                 displayPx4Flow = true,
+                displayJRE30 = true,
                 displayOpticalFlow = true,
                 displayOsd = true,
                 displayCameraGimbal = true,
@@ -387,6 +390,7 @@ namespace MissionPlanner.Utilities
                 displayRangeFinder = true,
                 displayAirSpeed = true,
                 displayPx4Flow = true,
+                displayJRE30 = true,
                 displayOpticalFlow = true,
                 displayOsd = true,
                 displayCameraGimbal = true,

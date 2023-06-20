@@ -2507,6 +2507,57 @@ Mission Planner waits for 2 valid heartbeat packets before connecting");
         }
 
         [Obsolete]
+        public bool doZeroSet_JRE30_1(bool armit)
+        {
+            return doZeroSet_JRE30_1(MAV.sysid, MAV.compid, armit);
+        }
+
+        public bool doZeroSet_JRE30_1(byte sysid, byte compid, bool armit)
+        {
+            return doZeroSet_JRE30_1_Async(sysid, compid, armit).AwaitSync();
+        }
+
+        public async Task<bool> doZeroSet_JRE30_1_Async(byte sysid, byte compid, bool armit)
+        {
+            if (armit) return await doCommandAsync(sysid, compid, MAV_CMD.ZEROSET_SET_JRE30, 1, 0, 0, 0, 0, 0, 0).ConfigureAwait(false);
+            else return await doCommandAsync(sysid, compid, MAV_CMD.ZEROSET_SET_JRE30, 0, 0, 0, 0, 0, 0, 0).ConfigureAwait(false);
+        }
+
+        [Obsolete]
+        public bool doZeroSet_JRE30_2(bool armit)
+        {
+            return doZeroSet_JRE30_2(MAV.sysid, MAV.compid, armit);
+        }
+
+        public bool doZeroSet_JRE30_2(byte sysid, byte compid, bool armit)
+        {
+            return doZeroSet_JRE30_2_Async(sysid, compid, armit).AwaitSync();
+        }
+
+        public async Task<bool> doZeroSet_JRE30_2_Async(byte sysid, byte compid, bool armit)
+        {
+            if (armit) return await doCommandAsync(sysid, compid, MAV_CMD.ZEROSET_CLR_JRE30, 1, 0, 0, 0, 0, 0, 0).ConfigureAwait(false);
+            else return await doCommandAsync(sysid, compid, MAV_CMD.ZEROSET_CLR_JRE30, 0, 0, 0, 0, 0, 0, 0).ConfigureAwait(false);
+        }
+
+        [Obsolete]
+        public bool doSetGain_JRE30_3(bool armit, float p1)
+        {
+            return doSetGain_JRE30_3(MAV.sysid, MAV.compid, armit, p1);
+        }
+
+        public bool doSetGain_JRE30_3(byte sysid, byte compid, bool armit, float p1)
+        {
+            return doSetGain_JRE30_3_Async(sysid, compid, armit, p1).AwaitSync();
+        }
+
+        public async Task<bool> doSetGain_JRE30_3_Async(byte sysid, byte compid, bool armit, float p1)
+        {
+            if (armit) return await doCommandAsync(sysid, compid, MAV_CMD.GAINSET_JRE30, 1, p1, 0, 0, 0, 0, 0).ConfigureAwait(false);
+            else return await doCommandAsync(sysid, compid, MAV_CMD.GAINSET_JRE30, 0, 0, 0, 0, 0, 0, 0).ConfigureAwait(false);
+        }
+
+        [Obsolete]
         public bool doARM(bool armit, bool force = false)
         {
             return doARM(MAV.sysid, MAV.compid, armit, force);

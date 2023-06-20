@@ -1983,7 +1983,20 @@
         <param index="6">Empty.</param>
         <param index="7">Empty.</param>
       </entry>
-    </enum>
+		<entry value="32100" name="MAV_CMD_ZEROSET_SET_JRE30" hasLocation="false" isDestination="false">
+			<description> SET/UNSET a command</description>
+			<param index="1" label="Set" minValue="0" maxValue="1" increment="1">0: unset, 1: set</param>
+		</entry>
+		<entry value="32101" name="MAV_CMD_ZEROSET_CLR_JRE30" hasLocation="false" isDestination="false">
+			<description> CLEAR/UNCLEAR  a command</description>
+			<param index="1" label="Arm" minValue="0" maxValue="1" increment="1">0: unclear, 1: clear</param>
+		</entry>
+		<entry value="32102" name="MAV_CMD_GAINSET_JRE30" hasLocation="false" isDestination="false">
+			<description> SET/UNSET  a command</description>
+			<param index="1" label="Set" minValue="0" maxValue="1" increment="1">0: unclear, 1: clear</param>
+			<param index="2" label="Val" minValue="-255" maxValue="255">GAIN Value</param>
+		</entry>
+	</enum>
     <enum name="MAV_DATA_STREAM">
       <description>A data stream is not a fixed set of messages, but rather a
      recommendation to the autopilot software. Individual autopilots may or may not obey

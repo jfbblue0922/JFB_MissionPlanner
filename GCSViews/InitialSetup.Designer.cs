@@ -61,6 +61,7 @@ namespace MissionPlanner.GCSViews
             this.backstageViewPagesonar = new System.Windows.Forms.Label();
             this.backstageViewPagetradheli = new System.Windows.Forms.Label();
             this.backstageViewPagewizard = new System.Windows.Forms.Label();
+            this.backstageViewPageJRE30 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // backstageView
@@ -216,6 +217,11 @@ namespace MissionPlanner.GCSViews
             resources.ApplyResources(this.backstageViewPagewizard, "backstageViewPagewizard");
             this.backstageViewPagewizard.Name = "backstageViewPagewizard";
             // 
+            // backstageViewPageJRE30
+            // 
+            resources.ApplyResources(this.backstageViewPageJRE30, "backstageViewPageJRE30");
+            this.backstageViewPageJRE30.Name = "backstageViewPageJRE30";
+            // 
             // InitialSetup
             // 
             this.Controls.Add(this.backstageViewPageaccel);
@@ -241,6 +247,7 @@ namespace MissionPlanner.GCSViews
             this.Controls.Add(this.backstageViewPageoptflow);
             this.Controls.Add(this.backstageViewPageosd);
             this.Controls.Add(this.backstageViewPageParachute);
+            this.Controls.Add(this.backstageViewPageJRE30);
             this.Controls.Add(this.backstageViewPagePX4Flow);
             this.Controls.Add(this.backstageViewPageradio);
             this.Controls.Add(this.backstageViewPageSikradio);
@@ -291,6 +298,6 @@ namespace MissionPlanner.GCSViews
         private Label backstageViewPagewizard;
 
         internal Controls.BackstageView.BackstageView backstageView;
-
+        private Label backstageViewPageJRE30;
     }
 }
