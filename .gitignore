@@ -43,3 +43,5 @@ docs/
 *.pem
 *.key
 /.vscode
+/ProgramData/*
+!/ProgramData/*.gz

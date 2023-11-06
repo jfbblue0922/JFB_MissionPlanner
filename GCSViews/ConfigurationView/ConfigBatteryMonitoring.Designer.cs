@@ -132,7 +132,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             // 
             // CMB_HWVersion
             // 
-            this.CMB_HWVersion.DropDownWidth = 200;
+            this.CMB_HWVersion.DropDownWidth = 250;
             this.CMB_HWVersion.FormattingEnabled = true;
             this.CMB_HWVersion.Items.AddRange(new object[] {
             resources.GetString("CMB_HWVersion.Items"),
@@ -145,7 +145,8 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             resources.GetString("CMB_HWVersion.Items7"),
             resources.GetString("CMB_HWVersion.Items8"),
             resources.GetString("CMB_HWVersion.Items9"),
-            resources.GetString("CMB_HWVersion.Items10")});
+            resources.GetString("CMB_HWVersion.Items10"),
+            resources.GetString("CMB_HWVersion.Items11")});
             resources.ApplyResources(this.CMB_HWVersion, "CMB_HWVersion");
             this.CMB_HWVersion.Name = "CMB_HWVersion";
             this.CMB_HWVersion.SelectedIndexChanged += new System.EventHandler(this.CMB_apmversion_SelectedIndexChanged);

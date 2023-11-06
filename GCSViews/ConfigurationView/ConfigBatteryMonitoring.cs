@@ -108,7 +108,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
                 CMB_HWVersion.Enabled = true;
 
                 var value = (double)MainV2.comPort.MAV.param["BATT_VOLT_PIN"];
-                if (value == 0) // apm1
+                if (value == 0) // apm1 or JFB100
                 {
                     CMB_HWVersion.SelectedIndex = 0;
                 }
@@ -153,10 +153,18 @@ namespace MissionPlanner.GCSViews.ConfigurationView
                 }
                 else if (value == 16)
                 {
-                    // durandal
-                    CMB_HWVersion.SelectedIndex = 9;
+                    if ((double)MainV2.comPort.MAV.param["BATT_CURR_PIN"] == 6)
+                    {
+                        //JFB110
+                        CMB_HWVersion.SelectedIndex = 11;
+                    }
+                    else
+                    {
+                        // durandal
+                        CMB_HWVersion.SelectedIndex = 9;
+                    }
                 }
-                 else if (value == 8)
+                else if (value == 8)
                 {
                     // Pixhawk 6C/Pix32 v6
                     CMB_HWVersion.SelectedIndex = 10;
@@ -491,7 +499,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             {
                 if (selection == 0)
                 {
-                    // apm1
+                    // apm1 or JFB100
                     MainV2.comPort.setParam((byte)MainV2.comPort.sysidcurrent, (byte)MainV2.comPort.compidcurrent, "BATT_VOLT_PIN", 0);
                     MainV2.comPort.setParam((byte)MainV2.comPort.sysidcurrent, (byte)MainV2.comPort.compidcurrent, "BATT_CURR_PIN", 1);
                 }
@@ -554,6 +562,12 @@ namespace MissionPlanner.GCSViews.ConfigurationView
                     //Pixhawk 6C/Pix32 v6
                     MainV2.comPort.setParam((byte)MainV2.comPort.sysidcurrent, (byte)MainV2.comPort.compidcurrent, "BATT_VOLT_PIN", 8);
                     MainV2.comPort.setParam((byte)MainV2.comPort.sysidcurrent, (byte)MainV2.comPort.compidcurrent, "BATT_CURR_PIN", 4);
+                }
+                else if (selection == 11)
+                {
+                    //JFB110
+                    MainV2.comPort.setParam((byte)MainV2.comPort.sysidcurrent, (byte)MainV2.comPort.compidcurrent, "BATT_VOLT_PIN", 16);
+                    MainV2.comPort.setParam((byte)MainV2.comPort.sysidcurrent, (byte)MainV2.comPort.compidcurrent, "BATT_CURR_PIN", 6);
                 }
             }
             catch
